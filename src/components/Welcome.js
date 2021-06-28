@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
+import {
+  welcome,
+  welcomeTitle,
+  welcomeCta,
+  textColorMain,
+} from "../styles/welcome.module.css";
+import { ctaButton, ctaButtonWelcome } from "../styles/button.module.css";
 
 const Welcome = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -15,7 +24,7 @@ const Welcome = () => {
     }
   }, []);
   return (
-    <section id="welcome" className="jumbotron">
+    <section id={welcome} className="jumbotron">
       <Container>
         <Fade
           left={isDesktop}
@@ -24,11 +33,15 @@ const Welcome = () => {
           delay={500}
           distance="30px"
         >
-          <h1 className="welcome-title">
-            {title || "Hi, my name is"}{" "}
-            <span className="text-color-main">{name || "Tyler Ridings"}</span>
+          <h1 className={welcomeTitle}>
+            Hi, my name is
+            <span className={textColorMain}> Tyler Ridings</span>!
             <br />
-            {subtitle || "I'm a Software Developer and author."}
+            I'm a <span className={textColorMain}>software developer</span> and
+            an
+            <span className={textColorMain}> author. </span>
+            <br />
+            Welcome to my portfolio!
           </h1>
         </Fade>
         <Fade
@@ -38,10 +51,10 @@ const Welcome = () => {
           delay={1000}
           distance="30px"
         >
-          <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
+          <p className={welcomeCta}>
+            <span className={`${ctaButton} ${ctaButtonWelcome}`}>
               <Link to="about" smooth duration={1000}>
-                {cta || "Know more"}
+                Know more
               </Link>
             </span>
           </p>
