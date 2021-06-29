@@ -2,13 +2,8 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import {
-  welcome,
-  welcomeTitle,
-  welcomeCta,
-  textColorMain,
-} from "../styles/welcome.module.css";
-import { ctaButton, ctaButtonWelcome } from "../styles/button.module.css";
+import * as welcomeStyles from "../styles/welcome.module.scss";
+import * as buttonStyles from "../styles/button.module.scss";
 
 const Welcome = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -24,7 +19,7 @@ const Welcome = () => {
     }
   }, []);
   return (
-    <section id={welcome} className="jumbotron">
+    <section id={welcomeStyles.welcome} className="jumbotron">
       <Container>
         <Fade
           left={isDesktop}
@@ -33,13 +28,16 @@ const Welcome = () => {
           delay={500}
           distance="30px"
         >
-          <h1 className={welcomeTitle}>
+          <h1 className={welcomeStyles.welcomeTitle}>
             Hi, my name is
-            <span className={textColorMain}> Tyler Ridings</span>!
+            <span className={welcomeStyles.textColorMain}> Tyler Ridings</span>!
             <br />
-            I'm a <span className={textColorMain}>software developer</span> and
-            an
-            <span className={textColorMain}> author. </span>
+            I'm a{" "}
+            <span className={welcomeStyles.textColorMain}>
+              software developer
+            </span>{" "}
+            and an
+            <span className={welcomeStyles.textColorMain}> author. </span>
             <br />
             Welcome to my portfolio!
           </h1>
@@ -51,8 +49,10 @@ const Welcome = () => {
           delay={1000}
           distance="30px"
         >
-          <p className={welcomeCta}>
-            <span className={`${ctaButton} ${ctaButtonWelcome}`}>
+          <p className={welcomeStyles.welcomeCta}>
+            <span
+              className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnWelcome}`}
+            >
               <Link to="about" smooth duration={1000}>
                 Know more
               </Link>
