@@ -1,5 +1,5 @@
-@import "./variables.module.scss";
-@import "./mixins.module.scss";
+@import "../Shared/variables.module.scss";
+@import "../Shared/screenSizes.module.scss";
 
 #welcome {
   min-height: 100vh;

@@ -1,0 +1,6 @@
+// Border White Mixin
+@mixin section-borders {
+  border: 1.5rem solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}

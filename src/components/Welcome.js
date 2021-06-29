@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import * as welcomeStyles from "../styles/welcome.module.scss";
-import * as buttonStyles from "../styles/button.module.scss";
+import * as welcomeStyles from "../styles/Component/welcome.module.scss";
+import * as buttonStyles from "../styles/UI/button.module.scss";
 
 const Welcome = () => {
   const [isDesktop, setIsDesktop] = useState(false);
