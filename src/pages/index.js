@@ -1,6 +1,7 @@
 import React from "react";
 import Welcome from "../components/Welcome";
 import About from "../components/About";
+import Projects from "../components/Projects";
 
 // markup
 const IndexPage = () => {
@@ -8,6 +9,7 @@ const IndexPage = () => {
     <main>
       <Welcome />
       <About />
+      <Projects />
     </main>
   );
 };
