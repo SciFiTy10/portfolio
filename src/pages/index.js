@@ -3,6 +3,7 @@ import Welcome from "../components/Welcome";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Books from "../components/Books";
+import Contact from "../components/Contact";
 
 // markup
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <About />
       <Projects />
       <Books />
+      <Contact />
     </main>
   );
 };

@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "./Title";
 import BookImg from "./Image/BookImg";
-import * as booksStyles from "../styles/Component/projects.module.scss";
+import * as booksStyles from "../styles/Component/books.module.scss";
 import * as buttonStyles from "../styles/UI/button.module.scss";
 import * as typographyStyles from "../styles/UI/typography.module.scss";
 
