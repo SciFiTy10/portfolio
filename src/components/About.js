@@ -26,14 +26,14 @@ const About = () => {
       <Container>
         <Title title="About Me" />
         <Row className={aboutStyles.aboutWrapper}>
-          <Col md={6} sm={12}>
+          <Col lg={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className={aboutStyles.aboutWrapperImage}>
                 <AboutImg />
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col lg={6} sm={12}>
             <Fade
               left={isDesktop}
               bottom={isMobile}

@@ -35,7 +35,6 @@ const Welcome = () => {
               {" "}
               Tyler Ridings
             </span>
-            !
             <br />
             I'm a{" "}
             <span className={typographyStyles.textColorMain}>
@@ -43,8 +42,6 @@ const Welcome = () => {
             </span>{" "}
             and an
             <span className={typographyStyles.textColorMain}> author. </span>
-            <br />
-            Welcome to my portfolio!
           </h1>
         </Fade>
         <Fade
