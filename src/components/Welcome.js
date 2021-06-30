@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
 import * as welcomeStyles from "../styles/Component/welcome.module.scss";
 import * as buttonStyles from "../styles/UI/button.module.scss";
+import * as typographyStyles from "../styles/UI/typography.module.scss";
 
 const Welcome = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -30,14 +31,18 @@ const Welcome = () => {
         >
           <h1 className={welcomeStyles.welcomeTitle}>
             Hi, my name is
-            <span className={welcomeStyles.textColorMain}> Tyler Ridings</span>!
+            <span className={typographyStyles.textColorMain}>
+              {" "}
+              Tyler Ridings
+            </span>
+            !
             <br />
             I'm a{" "}
-            <span className={welcomeStyles.textColorMain}>
+            <span className={typographyStyles.textColorMain}>
               software developer
             </span>{" "}
             and an
-            <span className={welcomeStyles.textColorMain}> author. </span>
+            <span className={typographyStyles.textColorMain}> author. </span>
             <br />
             Welcome to my portfolio!
           </h1>

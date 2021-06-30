@@ -22,17 +22,15 @@ const About = () => {
   }, []);
 
   return (
-    <section id={aboutStyles.about}>
+    <section id="about" className={aboutStyles.about}>
       <Container>
         <Title title="About Me" />
         <Row className={aboutStyles.aboutWrapper}>
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className={aboutStyles.about["about-wrapper__image"]}></div>
-              <AboutImg
-                alt="profile picture"
-                filename="../images/profile.jpg"
-              />
+              <div className={aboutStyles.aboutWrapperImage}>
+                <AboutImg />
+              </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
@@ -43,22 +41,22 @@ const About = () => {
               delay={1000}
               distance="30px"
             >
-              <div className={aboutStyles.about["about-wrapper__info"]}>
-                <p className={aboutStyles.about["about-wrapper__info-text"]}>
+              <div className={aboutStyles.aboutWrapperInfo}>
+                <p className={aboutStyles.aboutWrapperInfoText}>
                   "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Excepturi neque, ipsa animi maiores repellendu
                   distinctioaperiam earum dolor voluptatum consequatur
                   blanditiis inventore debitis fuga numquam voluptate architecto
                   itaque molestiae."
                 </p>
-                <p className={aboutStyles.about["about-wrapper__info-text"]}>
+                <p className={aboutStyles.aboutWrapperInfoText}>
                   "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Excepturi neque, ipsa animi maiores repellendu
                   distinctioaperiam earum dolor voluptatum consequatur
                   blanditiis inventore debitis fuga numquam voluptate architecto
                   itaque molestiae."
                 </p>
-                <p className={aboutStyles.about["about-wrapper__info-text"]}>
+                <p className={aboutStyles.aboutWrapperInfoText}>
                   "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
                 </p>
               </div>
