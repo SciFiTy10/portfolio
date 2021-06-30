@@ -2,6 +2,7 @@ import React from "react";
 import Welcome from "../components/Welcome";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import Books from "../components/Books";
 
 // markup
 const IndexPage = () => {
@@ -10,6 +11,7 @@ const IndexPage = () => {
       <Welcome />
       <About />
       <Projects />
+      <Books />
     </main>
   );
 };
