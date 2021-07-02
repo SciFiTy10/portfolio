@@ -5,7 +5,6 @@ import Title from "../components/Title";
 import ProjectImg from "../components/Image/ProjectImg";
 import * as projectsStyles from "../styles/Component/projects.module.scss";
 import * as buttonStyles from "../styles/UI/button.module.scss";
-import * as typographyStyles from "../styles/UI/typography.module.scss";
 
 const Projects = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -52,7 +51,7 @@ const Projects = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${buttonStyles.ctaBtn} ${typographyStyles.textColorMain}`}
+                    className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnWelcome}`}
                     href="https://github.com/SciFiTy10/portfolio"
                   >
                     Source Code

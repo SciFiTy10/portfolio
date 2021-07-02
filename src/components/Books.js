@@ -5,7 +5,6 @@ import Title from "./Title";
 import BookImg from "./Image/BookImg";
 import * as booksStyles from "../styles/Component/books.module.scss";
 import * as buttonStyles from "../styles/UI/button.module.scss";
-import * as typographyStyles from "../styles/UI/typography.module.scss";
 
 const Projects = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -37,7 +36,7 @@ const Projects = () => {
               >
                 <div className={booksStyles.bookWrapperText}>
                   <h3 className={booksStyles.bookWrapperTextTitle}>
-                    Project Title
+                    Book Title
                   </h3>
                   <div>
                     <p>
@@ -52,7 +51,7 @@ const Projects = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${buttonStyles.ctaBtn} ${typographyStyles.textColorMain}`}
+                    className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnWelcome}`}
                     href="https://www.amazon.com/COOL-Guide-Life-Tyler-Ridings/dp/B08YQCQ96P/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="
                   >
                     Buy

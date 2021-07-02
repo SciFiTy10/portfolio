@@ -25,6 +25,7 @@
     margin-top: 3.2rem;
     padding: 0 2rem;
     backface-visibility: hidden;
+    text-align: center;
 
     &-text {
       margin-bottom: 2.5rem;
@@ -33,6 +34,7 @@
     &-text,
     a {
       font-size: 2.4rem;
+      text-align: center;
 
       // Responsive for contact text
       @include respond(phone) {
