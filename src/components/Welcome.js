@@ -20,7 +20,7 @@ const Welcome = () => {
     }
   }, []);
   return (
-    <section id={welcomeStyles.welcome} className="jumbotron">
+    <section id="welcome" className={`${welcomeStyles.welcome} 'jumbotron'`}>
       <Container>
         <Fade
           left={isDesktop}
