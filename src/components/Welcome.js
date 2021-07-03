@@ -35,13 +35,14 @@ const Welcome = () => {
               {" "}
               Tyler Ridings
             </span>
+            .
             <br />
             I'm a{" "}
             <span className={typographyStyles.textColorMain}>
               Software Developer
             </span>{" "}
             and an
-            <span className={typographyStyles.textColorMain}> Author. </span>
+            <span className={typographyStyles.textColorMain}> Author</span>.
           </h1>
         </Fade>
         <Fade

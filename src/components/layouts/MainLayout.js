@@ -5,16 +5,19 @@ import Projects from "../Projects";
 import Books from "../Books";
 import Contact from "../Contact";
 import Footer from "../Footer";
+
+import { aboutData } from "../../Data/data";
+import PortfolioContext from "../../context/context";
 const MainLayout = () => {
   return (
-    <div>
+    <PortfolioContext.Provider value={{ aboutData }}>
       <Welcome />
       <About />
       <Projects />
       <Books />
       <Contact />
       <Footer />
-    </div>
+    </PortfolioContext.Provider>
   );
 };
 
