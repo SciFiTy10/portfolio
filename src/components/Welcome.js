@@ -38,10 +38,10 @@ const Welcome = () => {
             <br />
             I'm a{" "}
             <span className={typographyStyles.textColorMain}>
-              software developer
+              Software Developer
             </span>{" "}
             and an
-            <span className={typographyStyles.textColorMain}> author. </span>
+            <span className={typographyStyles.textColorMain}> Author. </span>
           </h1>
         </Fade>
         <Fade

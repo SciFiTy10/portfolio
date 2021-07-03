@@ -6,9 +6,6 @@ const ProjectImg = () => (
     alt="profile picture"
     src="../../images/profile.jpg"
     placeholder="blurred"
-    layout="fixed"
-    width={700}
-    height={350}
   />
 );
 

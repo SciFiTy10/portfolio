@@ -13,13 +13,15 @@ const Contact = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className={contactStyles.contactWrapper}>
             <p className={contactStyles.contactWrapperText}>
-              To request a copy of my resume
+              To request a copy of my resume, please contact me via LinkedIn
             </p>
+          </div>
+          <div className={contactStyles.contactWrapper}>
             <a
               target="_blank"
               rel="noopener noreferrer"
               className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnResume}`}
-              href="https://github.com/cobidev/react-simplefolio"
+              href="https://www.linkedin.com/in/tyler-ridings-24804585/"
             >
               Let's Talk
             </a>
