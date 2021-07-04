@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "portfolio",
+    title: "Ty's Portfolio",
+    charSet: "utf-8",
+    lang: "en",
+    name: "viewport",
+    content: "width=device-width, initial-scale=1",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

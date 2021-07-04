@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../components/Title";
 import AboutImg from "../components/Image/AboutImg";
 import * as aboutStyles from "../styles/Component/about.module.scss";
+import PortfolioContext from "../context/context";
 
 const About = () => {
-  //const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { aboutData } = useContext(PortfolioContext);
+  const { img, paragraphs } = aboutData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -42,23 +44,16 @@ const About = () => {
               distance="30px"
             >
               <div className={aboutStyles.aboutWrapperInfo}>
-                <p className={aboutStyles.aboutWrapperInfoText}>
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Excepturi neque, ipsa animi maiores repellendu
-                  distinctioaperiam earum dolor voluptatum consequatur
-                  blanditiis inventore debitis fuga numquam voluptate architecto
-                  itaque molestiae."
-                </p>
-                <p className={aboutStyles.aboutWrapperInfoText}>
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Excepturi neque, ipsa animi maiores repellendu
-                  distinctioaperiam earum dolor voluptatum consequatur
-                  blanditiis inventore debitis fuga numquam voluptate architecto
-                  itaque molestiae."
-                </p>
-                <p className={aboutStyles.aboutWrapperInfoText}>
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-                </p>
+                {paragraphs.map((paragraph) => {
+                  return (
+                    <p
+                      className={aboutStyles.aboutWrapperInfoText}
+                      key={paragraph.id}
+                    >
+                      {paragraph.text}
+                    </p>
+                  );
+                })}
               </div>
             </Fade>
           </Col>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import * as footerStyles from "../styles/Component/footer.module.scss";
 import { FaAngleUp, FaGithub, FaLinkedin } from "react-icons/fa";
+import PortfolioContext from "../context/context";
 
 const Footer = () => {
+  const { github, linkedIn } = useContext(PortfolioContext);
   return (
     <footer className={`${footerStyles.footer} ${"navbar-static-bottom"}`}>
       <Container>
@@ -15,7 +17,7 @@ const Footer = () => {
         </span>
         <div className={footerStyles.socialLinks}>
           <a
-            href="https://github.com/SciFiTy10"
+            href={github.url}
             rel="noopener noreferrer"
             target="_blank"
             aria-label="github"
@@ -23,7 +25,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/tyler-ridings-24804585/"
+            href={linkedIn.url}
             rel="noopener noreferrer"
             target="_blank"
             aria-label="linkedin"

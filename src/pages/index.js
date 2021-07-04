@@ -1,28 +1,36 @@
 import React from "react";
-import Welcome from "../components/Welcome";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Books from "../components/Books";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+
 import { Helmet } from "react-helmet";
+import MainLayout from "../components/layouts/MainLayout";
+import { useStaticQuery, graphql } from "gatsby";
 
 // markup
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          charSet
+          content
+          lang
+          name
+          title
+        }
+      }
+    }
+  `);
   return (
     <main>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Ty's Portfolio</title>
-        <html lang="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet={data.site.siteMetadata.charSet} />
+        <title>{data.site.siteMetadata.title}</title>
+        <html lang={data.site.siteMetadata.lang} />
+        <meta
+          name={data.site.siteMetadata.name}
+          content={data.site.siteMetadata.content}
+        />
       </Helmet>
-      <Welcome />
-      <About />
-      <Projects />
-      <Books />
-      <Contact />
-      <Footer />
+      <MainLayout />
     </main>
   );
 };
