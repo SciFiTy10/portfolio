@@ -1,29 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
 import { Container } from "react-bootstrap";
 import Title from "../components/Title";
 import * as contactStyles from "../styles/Component/contact.module.scss";
 import * as buttonStyles from "../styles/UI/button.module.scss";
+import PortfolioContext from "../context/context";
 
 const Contact = () => {
+  const { contactData, linkedIn } = useContext(PortfolioContext);
+  const { text } = contactData;
+  const { url } = linkedIn;
   return (
     <section id="contact" className={contactStyles.contact}>
       <Container>
         <Title title="Contact" />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className={contactStyles.contactWrapper}>
-            <p className={contactStyles.contactWrapperText}>
-              To request a copy of my resume, please contact me via LinkedIn
-            </p>
+            <p className={contactStyles.contactWrapperText}>{text}</p>
           </div>
           <div className={contactStyles.contactWrapper}>
             <a
               target="_blank"
               rel="noopener noreferrer"
               className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnResume}`}
-              href="https://www.linkedin.com/in/tyler-ridings-24804585/"
+              href={url}
             >
-              Let's Talk
+              Let's Chat
             </a>
           </div>
         </Fade>

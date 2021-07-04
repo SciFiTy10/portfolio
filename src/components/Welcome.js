@@ -37,12 +37,7 @@ const Welcome = () => {
             </span>
             .
             <br />
-            I'm a{" "}
-            <span className={typographyStyles.textColorMain}>
-              Software Developer
-            </span>{" "}
-            and an
-            <span className={typographyStyles.textColorMain}> Author</span>.
+            Welcome to my portfolio page!{" "}
           </h1>
         </Fade>
         <Fade
@@ -57,7 +52,7 @@ const Welcome = () => {
               className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnWelcome}`}
             >
               <Link to="about" smooth duration={1000}>
-                Know more
+                Get To Know Me
               </Link>
             </span>
           </p>

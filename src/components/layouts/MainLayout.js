@@ -6,11 +6,27 @@ import Books from "../Books";
 import Contact from "../Contact";
 import Footer from "../Footer";
 
-import { aboutData } from "../../Data/data";
+import {
+  aboutData,
+  projectsData,
+  bookData,
+  contactData,
+  linkedIn,
+  github,
+} from "../../Data/data";
 import PortfolioContext from "../../context/context";
 const MainLayout = () => {
   return (
-    <PortfolioContext.Provider value={{ aboutData }}>
+    <PortfolioContext.Provider
+      value={{
+        aboutData,
+        projectsData,
+        bookData,
+        contactData,
+        linkedIn,
+        github,
+      }}
+    >
       <Welcome />
       <About />
       <Projects />
