@@ -4,11 +4,10 @@ import { StaticImage } from "gatsby-plugin-image";
 const BookImg = () => (
   <StaticImage
     alt="profile picture"
-    src="../../images/profile.jpg"
+    src="../../images/a_cool_guide_to_life.jpg"
     placeholder="blurred"
     layout="fixed"
-    width={700}
-    height={350}
+    width={350}
   />
 );
 
