@@ -74,10 +74,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <div className={booksStyles.bookWrapperImageThumbnail}>
-                          <BookImg
-                            alt="profile picture"
-                            src="../../images/a_cool_guide_to_life.jpg"
-                          />
+                          <BookImg title={book.title} />
                         </div>
                       </a>
                     </div>
