@@ -68,7 +68,7 @@ const Projects = () => {
                   >
                     <div className={booksStyles.bookWrapperImage}>
                       <a
-                        href="#!"
+                        href={book.url}
                         target="_blank"
                         aria-label="Book Link"
                         rel="noopener noreferrer"
