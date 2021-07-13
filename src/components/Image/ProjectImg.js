@@ -4,6 +4,7 @@ import most_popular_nyt_articles from "../../images/most_popular_nyt_articles.jp
 import portfolio_page from "../../images/portfolio.jpg";
 
 const ProjectImg = ({ title }) => {
+  //define inline styling for project images
   const styles = {
     width: "100%",
   };

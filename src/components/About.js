@@ -8,7 +8,7 @@ import PortfolioContext from "../context/context";
 
 const About = () => {
   const { aboutData } = useContext(PortfolioContext);
-  const { img, paragraphs } = aboutData;
+  const { paragraphs } = aboutData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
