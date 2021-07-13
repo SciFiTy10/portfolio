@@ -81,7 +81,7 @@ const Projects = () => {
                     >
                       <div className={projectsStyles.projectWrapperImage}>
                         <a
-                          href="#!"
+                          href={project.source}
                           target="_blank"
                           aria-label="Project Link"
                           rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const Projects = () => {
                               projectsStyles.projectWrapperImageThumbnail
                             }
                           >
-                            <ProjectImg />
+                            <ProjectImg title={project.title} />
                           </div>
                         </a>
                       </div>

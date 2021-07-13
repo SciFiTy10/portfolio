@@ -1,15 +1,10 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import a_cool_guide_to_life from "../../images/a_cool_guide_to_life.jpg";
 
-const BookImg = () => (
-  <StaticImage
-    alt="profile picture"
-    src="../../images/profile.jpg"
-    placeholder="blurred"
-    layout="fixed"
-    width={700}
-    height={350}
-  />
-);
+const BookImg = () => {
+  return (
+    <img src={a_cool_guide_to_life} alt="portfolio page" className="shadow" />
+  );
+};
 
 export default BookImg;

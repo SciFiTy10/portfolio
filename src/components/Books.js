@@ -68,13 +68,13 @@ const Projects = () => {
                   >
                     <div className={booksStyles.bookWrapperImage}>
                       <a
-                        href="#!"
+                        href={book.url}
                         target="_blank"
                         aria-label="Book Link"
                         rel="noopener noreferrer"
                       >
                         <div className={booksStyles.bookWrapperImageThumbnail}>
-                          <BookImg />
+                          <BookImg title={book.title} />
                         </div>
                       </a>
                     </div>
