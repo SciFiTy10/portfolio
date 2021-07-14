@@ -70,6 +70,9 @@
 
       &-thumbnail {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        border: none;
         @include respond(phone) {
           margin-bottom: 3.2rem;
         }
