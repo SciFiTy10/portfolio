@@ -6,8 +6,8 @@ export const aboutData = {
       id: 1,
       text: `I'm a professional software developer who loves to 
       solve challenging problems in order to make people's
-      lives easier. I'm somebody who looks forward to being
-      stumped because it generates a new learning opportunity.
+      lives easier. I love programming because it forces you to constantly learn and adapt, 
+      which I find to be very exciting.
       There is always a better way to build a solution, and that keeps me motivated to 
       improve my craft as a developer. 
       `,
@@ -55,7 +55,7 @@ export const projectsData = {
         {
           id: 4,
           name: "GraphQL",
-          text: "a query language I used with Gatsby to look up site metadata and image files",
+          text: "a query language I used with Gatsby to look up site metadata",
         },
         {
           id: 5,
@@ -121,7 +121,7 @@ export const projectsData = {
       description: `This is an Alexa skill which takes the user's input and converts
       each word to how Snoop Dogg would say it. For example if the 
       user’s input is “say on the contrary, that chicken was bad” 
-      the skill returns “on the contrizzle that chickizzle was bizzad."`,
+      the skill returns “on the contrarizzle that chickizzle was bizzad."`,
       source: "https://github.com/SciFiTy10/talkLikeSnoop",
       url: "https://www.amazon.com/SciFiTy-Talk-Like-Snoop/dp/B07K1SHLJ8/ref=sr_1_1?dchild=1&keywords=talk+like+snoop&qid=1625369746&s=digital-skills&sr=1-1",
       technologies: [

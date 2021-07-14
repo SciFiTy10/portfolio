@@ -25,7 +25,7 @@ const ProjectImg = ({ title }) => {
           src={talk_like_snoop}
           alt="talk like snoop (alexa skill)"
           className="shadow"
-          style={{ style: "height: 50%;" }}
+          style={{ style: "height: 50%" }}
         />
       );
     case "Most Popular NYT Articles":
