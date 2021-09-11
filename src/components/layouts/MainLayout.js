@@ -5,6 +5,7 @@ import Projects from "../Projects";
 import Books from "../Books";
 import Contact from "../Contact";
 import Footer from "../Footer";
+
 import {
   aboutData,
   projectsData,
@@ -16,7 +17,6 @@ import {
 import PortfolioContext from "../../context/context";
 const MainLayout = () => {
   return (
-    //provide context data for child components
     <PortfolioContext.Provider
       value={{
         aboutData,

@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../components/Title";
 import ProjectImg from "../components/Image/ProjectImg";
+import BookImg from "../components/Image/BookImg";
 import * as projectsStyles from "../styles/Component/projects.module.scss";
 import * as buttonStyles from "../styles/UI/button.module.scss";
 import * as typographyStyles from "../styles/UI/typography.module.scss";
@@ -81,7 +82,7 @@ const Projects = () => {
                     >
                       <div className={projectsStyles.projectWrapperImage}>
                         <a
-                          href={project.source}
+                          href="#!"
                           target="_blank"
                           aria-label="Project Link"
                           rel="noopener noreferrer"
@@ -91,7 +92,7 @@ const Projects = () => {
                               projectsStyles.projectWrapperImageThumbnail
                             }
                           >
-                            <ProjectImg title={project.title} />
+                            <BookImg title={project.title} />
                           </div>
                         </a>
                       </div>
