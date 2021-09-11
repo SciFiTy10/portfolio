@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/SciFiTy10/portfolio">
-    <img src="media/burger_logo.png" alt="Logo" width="80" height="80">
+    <img src="image/profile.jpg" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">My Portfolio</h3>
@@ -122,9 +122,9 @@ This project is organized by the job to be done for each file.
 
   **Problems** - Per the documentation, there was a former gatsby-image plugin that's now deprecated. This is in favor of that plugin being replaced by a StaticImage and GatsbyImage (not sure why they couldn't pick a different name) plugin.
 
-  I knew that I wanted a dynamic image, but couldn't for the life of me get the selected image to process via gatsbyImageData. I ended up having to use a StaticImage, and then working around it via media queries and styling.
+  I knew that I wanted a dynamic image, but couldn't for the life of me get the selected image to process via gatsbyImageData. I ended up having to use a StaticImage, and then handling the styling around it via media queries and additional style rules.
 
-  **What would I change** - Maybe if I had more GraphQL experience this would have clicked easier for me, but I was a bit disappointed that to take advantage of this benefit of Gatsby, where image optimization is supposed to be a breeze, I had to overcome the hurdle of understanding GraphQL.
+  **What would I change** - Maybe if I had more GraphQL experience this would have clicked for me, but I was a bit disappointed that to take advantage of this benefit of Gatsby, where image optimization is supposed to be a breeze, I had to overcome the hurdle of understanding GraphQL.
 
   I understand the strengths of GraphQL and what it brings to the table, but I'm not sure I understand why that had to be a requirement to obtain great image optimization.
 
@@ -161,8 +161,17 @@ Make sure you have the latest version of npm installed
 ### Running Project
 
 1. Running the project in development mode
+
    ```sh
-   npm start
+   gatsby develop
+   ```
+
+   Then open https://localhost:8000 in your browser.
+
+   Alternatively, to open in your default browser you can do
+
+   ```sh
+   gatsby develop --open
    ```
 
 <!-- ROADMAP -->
