@@ -92,7 +92,7 @@ const Projects = () => {
                             }
                           >
                             <Video
-                              id="4d73eb1ef5b94cd8a23e0ebe6309b1e3"
+                              fileId={project.fileId}
                               title={project.title}
                             />
                           </div>

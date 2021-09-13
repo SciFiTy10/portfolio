@@ -8,7 +8,7 @@ import PortfolioContext from "../../context/context";
 
 const About = () => {
   const { aboutData } = useContext(PortfolioContext);
-  const { paragraphs } = aboutData;
+  const { title, fileId, paragraphs } = aboutData;
 
   return (
     <section id="about" className={aboutStyles.about}>
@@ -18,10 +18,7 @@ const About = () => {
           <Col lg={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className={aboutStyles.aboutWrapperImage}>
-                <Video
-                  id="4d73eb1ef5b94cd8a23e0ebe6309b1e3"
-                  title="Welcome Video"
-                />
+                <Video fileId={fileId} title={title} />
               </div>
             </Fade>
           </Col>

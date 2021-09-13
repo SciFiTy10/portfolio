@@ -10,7 +10,7 @@ function Video(props) {
       width={screenSize.isMobile ? "340" : "440"}
       height={screenSize.isMobile ? "190" : "250"}
       title={props.title}
-      src={`https://www.loom.com/embed/${props.id}`}
+      src={`https://www.loom.com/embed/${props.fileId}`}
       frameBorder="0"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
