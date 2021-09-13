@@ -16,12 +16,10 @@ export const aboutData = {
     {
       id: 2,
       text: `When I'm not programming, one of my favorite things to do
-      is to write. In 2020, I published a book called "A COOL Guide To Life"
-      which you can check out in the "Books" section below. Writing and 
+      is to write. On March 11, 2021, I published a book called "A COOL Guide To Life"
+      which you can check out in the "Books" section below. I believe writing and 
       programming go hand-in-hand because they both push you to 
-      structure your thoughts. I believe the experience of 
-      producing well written code is a similar experience to producing
-      good writing: it's best achieved when you do a lot of it.`,
+      structure your thoughts.`,
     },
   ],
 };
