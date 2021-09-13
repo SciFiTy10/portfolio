@@ -30,6 +30,47 @@ export const projectsData = {
   projects: [
     {
       id: 1,
+      title: "Big Kahuna Burger",
+      description: `This application is a create-react-app project I built to have 
+      some fun with React and Material UI, and to pay homage to one of my favorite movie
+      scenes.`,
+      source: "https://github.com/SciFiTy10/burger-restaurant",
+      url: "https://big-kahuna-burger.netlify.app",
+      technologies: [
+        {
+          id: 1,
+          name: "React",
+          text: "a library for creating reusable UI components",
+        },
+        {
+          id: 2,
+          name: "Material UI",
+          text: "a UI framework I used to manage the design of my app",
+        },
+        {
+          id: 3,
+          name: "Netlify",
+          text: "an application for building, deploying, and hosting my application",
+        },
+        {
+          id: 4,
+          name: "Jest",
+          text: "a test runner I used for writing unit and small integration tests",
+        },
+        {
+          id: 5,
+          name: "React Testing Library",
+          text: "a helper package which makes testing with Jest easier",
+        },
+        {
+          id: 6,
+          name: "Cypress",
+          text: "a testing framework I used for running larger integration tests",
+        },
+      ],
+    },
+    {
+      id: 2,
       title: "Portfolio Page",
       description: `This application is a Gatsby project I built to show
       off my current and future projects. It is a static, single page application
@@ -85,7 +126,7 @@ export const projectsData = {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Most Popular NYT Articles",
       description: `This is an Angular application which displays the most popular articles 
       from the New York Times API. Articles can be filtered by 
@@ -105,7 +146,7 @@ export const projectsData = {
         },
         {
           id: 3,
-          name: "Angular Material UI",
+          name: "Angular Material",
           text: "a UI component library I used which follows Google's material design spec for styling.",
         },
         {
@@ -116,7 +157,7 @@ export const projectsData = {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Talk Like Snoop (Alexa Skill)",
       description: `This is an Alexa skill which takes the user's input and converts
       each word to how Snoop Dogg would say it. For example if the 

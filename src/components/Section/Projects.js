@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState, Fragment } from "react";
 import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "./Title";
-import ProjectImg from "../Video/ProjectImg";
+import Video from "../Video/Video";
 import * as projectsStyles from "../../styles/Component/projects.module.scss";
 import * as buttonStyles from "../../styles/UI/button.module.scss";
 import * as typographyStyles from "../../styles/UI/typography.module.scss";
@@ -91,7 +91,10 @@ const Projects = () => {
                               projectsStyles.projectWrapperImageThumbnail
                             }
                           >
-                            <ProjectImg title={project.title} />
+                            <Video
+                              id="4d73eb1ef5b94cd8a23e0ebe6309b1e3"
+                              title={project.title}
+                            />
                           </div>
                         </a>
                       </div>
