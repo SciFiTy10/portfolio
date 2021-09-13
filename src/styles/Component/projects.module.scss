@@ -4,12 +4,14 @@
 .projects {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin-top: -15rem;
-  padding-top: 15rem;
+  margin-top: $section-margin-top;
+  padding-top: $section-padding-top;
 
-  @include respond(tab-land) {
-    margin-top: 0;
-    padding-top: 5rem;
+  &-video {
+    flex-grow: 1;
+    @include respond(tab-port) {
+      flex-grow: 0.5;
+    }
   }
 
   &-technologies-header {
@@ -25,12 +27,16 @@
 }
 
 .project-wrapper {
-  margin-bottom: 15rem;
-
   @include respond(phone) {
     margin-bottom: 0rem;
   }
 
+  &-video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
   &-text {
     text-align: left;
 
@@ -55,32 +61,4 @@
       color: $secondary-color;
     }
   }
-
-  &-video {
-    @include respond(phone) {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  }
-
-  // &-image {
-  //   width: 90%;
-  //   margin: 0 auto;
-
-  //   @include respond(tab-land) {
-  //     width: 100%;
-  //     margin: 0;
-  //   }
-
-  //   &-thumbnail {
-  //     width: 100%;
-  //     display: flex;
-  //     justify-content: center;
-  //     border: none;
-  //     @include respond(phone) {
-  //       margin-bottom: 0.5rem;
-  //     }
-  //   }
-  // }
 }
