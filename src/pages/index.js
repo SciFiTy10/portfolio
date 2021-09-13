@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Helmet } from "react-helmet";
-import MainLayout from "../components/layouts/MainLayout";
+import MainLayout from "../layouts/MainLayout";
 import { useStaticQuery, graphql } from "gatsby";
 
 // markup

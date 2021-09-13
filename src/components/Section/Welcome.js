@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
-import * as welcomeStyles from "../styles/Component/welcome.module.scss";
-import * as buttonStyles from "../styles/UI/button.module.scss";
-import * as typographyStyles from "../styles/UI/typography.module.scss";
+import * as welcomeStyles from "../../styles/Component/welcome.module.scss";
+import * as buttonStyles from "../../styles/UI/button.module.scss";
+import * as typographyStyles from "../../styles/UI/typography.module.scss";
 
 const Welcome = () => {
   const [isDesktop, setIsDesktop] = useState(false);

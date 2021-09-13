@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-scroll";
-import * as footerStyles from "../styles/Component/footer.module.scss";
+import * as footerStyles from "../../styles/Component/footer.module.scss";
 import { FaAngleUp, FaGithub, FaLinkedin } from "react-icons/fa";
-import PortfolioContext from "../context/context";
+import PortfolioContext from "../../context/context";
 
 const Footer = () => {
   const { github, linkedIn } = useContext(PortfolioContext);

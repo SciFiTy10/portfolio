@@ -2,12 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "./Title";
-import BookImg from "./Image/BookImg";
-import * as booksStyles from "../styles/Component/books.module.scss";
-import * as buttonStyles from "../styles/UI/button.module.scss";
-import PortfolioContext from "../context/context";
+import BookImg from "../Video/BookImg";
+import * as booksStyles from "../../styles/Component/books.module.scss";
+import * as buttonStyles from "../../styles/UI/button.module.scss";
+import PortfolioContext from "../../context/context";
 
-const Projects = () => {
+const Books = () => {
   const { bookData } = useContext(PortfolioContext);
   const { books } = bookData;
   const [isDesktop, setIsDesktop] = useState(false);
@@ -89,4 +89,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Books;

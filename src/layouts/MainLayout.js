@@ -1,10 +1,10 @@
 import React from "react";
-import Welcome from "../Welcome";
-import About from "../About";
-import Projects from "../Projects";
-import Books from "../Books";
-import Contact from "../Contact";
-import Footer from "../Footer";
+import Welcome from "../components/Section/Welcome";
+import About from "../components/Section/About";
+import Projects from "../components/Section/Projects";
+import Books from "../components/Section/Books";
+import Contact from "../components/Section/Contact";
+import Footer from "../components/Section/Footer";
 import {
   aboutData,
   projectsData,
@@ -12,8 +12,8 @@ import {
   contactData,
   linkedIn,
   github,
-} from "../../Data/data";
-import PortfolioContext from "../../context/context";
+} from "../Data/data";
+import PortfolioContext from "../context/context";
 const MainLayout = () => {
   return (
     //provide context data for child components
