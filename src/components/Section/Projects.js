@@ -65,24 +65,8 @@ const Projects = () => {
                       delay={1000}
                       distance="30px"
                     >
-                      <div className={projectsStyles.projectWrapperImage}>
-                        <a
-                          href={project.source}
-                          target="_blank"
-                          aria-label="Project Link"
-                          rel="noopener noreferrer"
-                        >
-                          <div
-                            className={
-                              projectsStyles.projectWrapperImageThumbnail
-                            }
-                          >
-                            <Video
-                              fileId={project.fileId}
-                              title={project.title}
-                            />
-                          </div>
-                        </a>
+                      <div className={projectsStyles.projectWrapperVideo}>
+                        <Video fileId={project.fileId} title={project.title} />
                       </div>
                     </Fade>
                   </Col>
