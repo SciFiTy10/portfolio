@@ -33,8 +33,7 @@ const Books = () => {
               <Row key={book.id}>
                 <Col lg={4} sm={12}>
                   <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
+                    bottom={true}
                     duration={1000}
                     delay={500}
                     distance="30px"
@@ -60,8 +59,7 @@ const Books = () => {
                 </Col>
                 <Col lg={8} sm={12}>
                   <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
+                    bottom={true}
                     duration={1000}
                     delay={1000}
                     distance="30px"

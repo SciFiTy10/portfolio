@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState, Fragment } from "react";
+import React, { useContext, Fragment } from "react";
 import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "./Title";
@@ -10,20 +10,8 @@ import * as typographyStyles from "../../styles/UI/typography.module.scss";
 import PortfolioContext from "../../context/context";
 
 const Projects = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const { projectsData } = useContext(PortfolioContext);
   const { projects } = projectsData;
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
 
   return (
     <section id="projects" className={projectsStyles.projects}>
@@ -36,8 +24,7 @@ const Projects = () => {
                 <Row>
                   <Col lg={4} sm={12}>
                     <Fade
-                      left={isDesktop}
-                      bottom={isMobile}
+                      bottom={true}
                       duration={1000}
                       delay={500}
                       distance="30px"
@@ -73,8 +60,7 @@ const Projects = () => {
                   </Col>
                   <Col lg={8} sm={12}>
                     <Fade
-                      right={isDesktop}
-                      bottom={isMobile}
+                      bottom={true}
                       duration={1000}
                       delay={1000}
                       distance="30px"
@@ -104,8 +90,7 @@ const Projects = () => {
                 <Row className={projectsStyles.projectsTechnologiesHeader}>
                   <Col sm={12}>
                     <Fade
-                      right={isDesktop}
-                      bottom={isMobile}
+                      bottom={true}
                       duration={1000}
                       delay={1000}
                       distance="30px"
@@ -119,8 +104,7 @@ const Projects = () => {
                 <Row className={projectsStyles.projectsTechnologiesBody}>
                   <Col sm={12}>
                     <Fade
-                      right={isDesktop}
-                      bottom={isMobile}
+                      bottom={true}
                       duration={1000}
                       delay={1000}
                       distance="30px"
