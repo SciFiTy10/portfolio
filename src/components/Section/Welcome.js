@@ -52,7 +52,7 @@ const Welcome = () => {
               className={`${buttonStyles.ctaBtn} ${buttonStyles.ctaBtnWelcome}`}
             >
               <Link to="about" smooth duration={1000}>
-                Get To Know Me
+                About Me
               </Link>
             </span>
           </p>
