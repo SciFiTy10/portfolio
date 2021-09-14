@@ -65,7 +65,7 @@
 ## About The Project
 
 <!--add link to main page -->
-<img src="image/portfolio.jpg" alt="main_section" >
+<img src="image/main.png" alt="main_section" >
 
 Welcome to my portfolio site!
 
