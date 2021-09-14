@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "./Title";
-import BookImg from "../Video/BookImg";
+import BookImage from "../Image/BookImage";
 import * as booksStyles from "../../styles/Component/books.module.scss";
 import * as buttonStyles from "../../styles/UI/button.module.scss";
 import PortfolioContext from "../../context/context";
@@ -72,7 +72,7 @@ const Books = () => {
                         rel="noopener noreferrer"
                       >
                         <div className={booksStyles.bookWrapperImageThumbnail}>
-                          <BookImg title={book.title} />
+                          <BookImage />
                         </div>
                       </a>
                     </div>

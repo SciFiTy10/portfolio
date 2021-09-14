@@ -8,7 +8,11 @@
   padding-top: $section-padding-top;
 }
 .book-wrapper {
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
+
+  @include respond(desktop) {
+    margin-bottom: 15rem;
+  }
 
   @include respond(phone) {
     margin-bottom: 0rem;
