@@ -104,7 +104,7 @@ Site metadata is retrieved using [GraphQL](https://graphql.org)
 
 This project is organized by the job to be done for each file.
 
-- There is a components folder, which holds subfolders for section components and a video component.
+- There is a components folder, which holds subfolders for a book image component, the section components, and a video component.
 
 - A context folder establishes the React Context object, Provider, and Consumer which will distribute data to our app's components.
 
