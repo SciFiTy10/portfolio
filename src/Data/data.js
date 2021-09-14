@@ -30,7 +30,7 @@ export const projectsData = {
     {
       id: 1,
       title: "Big Kahuna Burger",
-      fileId: "4d73eb1ef5b94cd8a23e0ebe6309b1e3",
+      fileId: "a12b1827e5394f72b63908a984ad49c4",
       description: `This application is a create-react-app project I built to have 
       some fun with React and Material UI, and to pay homage to one of my favorite movie
       scenes.`,
