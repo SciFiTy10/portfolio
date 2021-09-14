@@ -1,26 +1,11 @@
 import React, { useContext, Fragment } from "react";
 import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
-<<<<<<< HEAD:src/components/Projects.js
-import Title from "../components/Title";
-import ProjectImg from "../components/Image/ProjectImg";
-import BookImg from "../components/Image/BookImg";
-import * as projectsStyles from "../styles/Component/projects.module.scss";
-import * as buttonStyles from "../styles/UI/button.module.scss";
-import * as typographyStyles from "../styles/UI/typography.module.scss";
-||||||| 72b6633:src/components/Projects.js
-import Title from "../components/Title";
-import ProjectImg from "../components/Image/ProjectImg";
-import * as projectsStyles from "../styles/Component/projects.module.scss";
-import * as buttonStyles from "../styles/UI/button.module.scss";
-import * as typographyStyles from "../styles/UI/typography.module.scss";
-=======
 import Title from "./Title";
 import Video from "../Video/Video";
 import * as projectsStyles from "../../styles/Component/projects.module.scss";
 import * as buttonStyles from "../../styles/UI/button.module.scss";
 import * as typographyStyles from "../../styles/UI/typography.module.scss";
->>>>>>> release/1.0:src/components/Section/Projects.js
 
 import PortfolioContext from "../../context/context";
 
