@@ -72,7 +72,7 @@ export const projectsData = {
     {
       id: 2,
       title: "Portfolio Page",
-      fileId: "c0eb2bf5a19745b89ad968f8bab3e0a4",
+      fileId: "63489c07b21b47cbb6fcd312ab1ec80a",
       description: `This application is a Gatsby project I built to show
       off my current and future projects. It is a static, single page application
       which holds details about me, my projects, and the books I've written.`,
@@ -161,7 +161,7 @@ export const projectsData = {
     {
       id: 4,
       title: "Talk Like Snoop (Alexa Skill)",
-      fileId: "30abd28c882e414aa6abdfb7543bb2c1",
+      fileId: "14848397bb564b0792720298c447b0a4",
       description: `This is an Alexa skill which takes the user's input and converts
       each word to how Snoop Dogg would say it. For example if the 
       user’s input is “say on the contrary, that chicken was bad” 
