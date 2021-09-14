@@ -13,6 +13,9 @@
   @include respond(desktop) {
     margin-bottom: 15rem;
   }
+  @include respond(big-desktop) {
+    margin-bottom: 15rem;
+  }
 
   @include respond(phone) {
     margin-bottom: 0rem;

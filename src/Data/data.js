@@ -72,7 +72,7 @@ export const projectsData = {
     {
       id: 2,
       title: "Portfolio Page",
-      fileId: "4d73eb1ef5b94cd8a23e0ebe6309b1e3",
+      fileId: "c0eb2bf5a19745b89ad968f8bab3e0a4",
       description: `This application is a Gatsby project I built to show
       off my current and future projects. It is a static, single page application
       which holds details about me, my projects, and the books I've written.`,
@@ -129,7 +129,7 @@ export const projectsData = {
     {
       id: 3,
       title: "Most Popular NYT Articles",
-      fileId: "4d73eb1ef5b94cd8a23e0ebe6309b1e3",
+      fileId: "840b275a732e4f178066151b8983eac3",
       description: `This is an Angular application which displays the most popular articles 
       from the New York Times API. Articles can be filtered by 
       the most emailed, the most shared to Facebook, and the most viewed.`,
@@ -161,7 +161,7 @@ export const projectsData = {
     {
       id: 4,
       title: "Talk Like Snoop (Alexa Skill)",
-      fileId: "4d73eb1ef5b94cd8a23e0ebe6309b1e3",
+      fileId: "30abd28c882e414aa6abdfb7543bb2c1",
       description: `This is an Alexa skill which takes the user's input and converts
       each word to how Snoop Dogg would say it. For example if the 
       user’s input is “say on the contrary, that chicken was bad” 
