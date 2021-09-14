@@ -1,6 +1,7 @@
 //about
 export const aboutData = {
-  img: "profile.jpg",
+  title: "Welcome Video",
+  fileId: "22777f9f0efc477cbf76b4b9cf6e7a05",
   paragraphs: [
     {
       id: 1,
@@ -15,12 +16,10 @@ export const aboutData = {
     {
       id: 2,
       text: `When I'm not programming, one of my favorite things to do
-      is to write. In 2020, I published a book called "A COOL Guide To Life"
-      which you can check out in the "Books" section below. Writing and 
+      is to write. On March 11, 2021, I published a book called "A COOL Guide To Life"
+      which you can check out in the "Books" section below. I believe writing and 
       programming go hand-in-hand because they both push you to 
-      structure your thoughts. I believe the experience of 
-      producing well written code is a similar experience to producing
-      good writing: it's best achieved when you do a lot of it.`,
+      structure your thoughts.`,
     },
   ],
 };
@@ -30,7 +29,50 @@ export const projectsData = {
   projects: [
     {
       id: 1,
+      title: "Big Kahuna Burger",
+      fileId: "a12b1827e5394f72b63908a984ad49c4",
+      description: `This application is a create-react-app project I built to have 
+      some fun with React and Material UI, and to pay homage to one of my favorite movie
+      scenes.`,
+      source: "https://github.com/SciFiTy10/burger-restaurant",
+      url: "https://big-kahuna-burger.netlify.app",
+      technologies: [
+        {
+          id: 1,
+          name: "React",
+          text: "a library for creating reusable UI components",
+        },
+        {
+          id: 2,
+          name: "Material UI",
+          text: "a UI framework I used to manage the design of my app",
+        },
+        {
+          id: 3,
+          name: "Netlify",
+          text: "an application for building, deploying, and hosting my application",
+        },
+        {
+          id: 4,
+          name: "Jest",
+          text: "a test runner I used for writing unit and small integration tests",
+        },
+        {
+          id: 5,
+          name: "React Testing Library",
+          text: "a helper package which makes testing with Jest easier",
+        },
+        {
+          id: 6,
+          name: "Cypress",
+          text: "a testing framework I used for running larger integration tests",
+        },
+      ],
+    },
+    {
+      id: 2,
       title: "Portfolio Page",
+      fileId: "63489c07b21b47cbb6fcd312ab1ec80a",
       description: `This application is a Gatsby project I built to show
       off my current and future projects. It is a static, single page application
       which holds details about me, my projects, and the books I've written.`,
@@ -85,8 +127,9 @@ export const projectsData = {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Most Popular NYT Articles",
+      fileId: "840b275a732e4f178066151b8983eac3",
       description: `This is an Angular application which displays the most popular articles 
       from the New York Times API. Articles can be filtered by 
       the most emailed, the most shared to Facebook, and the most viewed.`,
@@ -105,7 +148,7 @@ export const projectsData = {
         },
         {
           id: 3,
-          name: "Angular Material UI",
+          name: "Angular Material",
           text: "a UI component library I used which follows Google's material design spec for styling.",
         },
         {
@@ -116,8 +159,9 @@ export const projectsData = {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Talk Like Snoop (Alexa Skill)",
+      fileId: "14848397bb564b0792720298c447b0a4",
       description: `This is an Alexa skill which takes the user's input and converts
       each word to how Snoop Dogg would say it. For example if the 
       user’s input is “say on the contrary, that chicken was bad” 
