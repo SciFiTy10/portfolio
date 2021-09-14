@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
 import { Container } from "react-bootstrap";
-import Title from "../components/Title";
-import * as contactStyles from "../styles/Component/contact.module.scss";
-import * as buttonStyles from "../styles/UI/button.module.scss";
-import PortfolioContext from "../context/context";
+import Title from "./Title";
+import * as contactStyles from "../../styles/Component/contact.module.scss";
+import * as buttonStyles from "../../styles/UI/button.module.scss";
+import PortfolioContext from "../../context/context";
 
 const Contact = () => {
   const { contactData, linkedIn } = useContext(PortfolioContext);

@@ -41,7 +41,6 @@
         <li><a href="#cicd-and-hosting">CI/CD and Hosting</a></li>
         <li><a href="#state-management">State Management</a></li>
         <li><a href="#project-folder-structure">Project Folder Structure</a></li>
-        <li><a href="#things-i-learned-and-things-i-wouldve-done-differently">Things I Learned and Things I Would've Done Differently</a></li>
       </ul>
     </li>
     <li>
@@ -66,11 +65,11 @@
 ## About The Project
 
 <!--add link to main page -->
-<img src="image/main.png" alt="main_section" >
+<img src="image/portfolio.jpg" alt="main_section" >
 
 Welcome to my portfolio site!
 
-This is a project I built to showcase my skills, all of my programming projects, and the book that I wrote.
+This is a project I built to showcase my programming projects and the book that I wrote.
 
 ---
 
@@ -80,7 +79,10 @@ This is a project I built to showcase my skills, all of my programming projects,
 - [GatsbyJs](https://www.gatsbyjs.com)
 - [GraphQL](https://graphql.org)
 - [SCSS](https://sass-lang.com)
+- [React Reveal](https://www.react-reveal.com)
 - [React Scroll](https://www.npmjs.com/package/react-scroll)
+
+Videos recorded and hosted with [Loom](https://www.loom.com/)
 
 ---
 
@@ -102,7 +104,7 @@ Site metadata is retrieved using [GraphQL](https://graphql.org)
 
 This project is organized by the job to be done for each file.
 
-- There is a components folder, which breaks down further into Image components, Layout components, and then specific custom components.
+- There is a components folder, which holds subfolders for a book image component, the section components, and a video component.
 
 - A context folder establishes the React Context object, Provider, and Consumer which will distribute data to our app's components.
 
@@ -113,20 +115,6 @@ This project is organized by the job to be done for each file.
 - And finally we have a styles folder, which houses our SCSS modules. That folder contains styling which is applied by component, styling which is shared across components, and UI component styling.
 
 ---
-
-### Things I Learned and Things I Would've Done Differently
-
-- I found Gatsby to be both easy and hard to work with. If you know React well, this gives you a great starting point for a static site. But if you aren't as sharp with GraphQL, there is definitely a learning curve.
-
-  **Reason** - This was some of my first exposure to GraphQL, and while the syntax for that wasn't that difficult to comprehend, what made things harder was the documentation for images in Gatsby.
-
-  **Problems** - Per the documentation, there was a former gatsby-image plugin that's now deprecated. This is in favor of that plugin being replaced by a StaticImage and GatsbyImage (not sure why they couldn't pick a different name) plugin.
-
-  I knew that I wanted a dynamic image, but couldn't for the life of me get the selected image to process via gatsbyImageData. I ended up having to use a StaticImage, and then handling the styling around it via media queries and additional style rules.
-
-  **What would I change** - Maybe if I had more GraphQL experience this would have clicked for me, but I was a bit disappointed that to take advantage of this benefit of Gatsby, where image optimization is supposed to be a breeze, I had to overcome the hurdle of understanding GraphQL.
-
-  I understand the strengths of GraphQL and what it brings to the table, but I'm not sure I understand why that had to be a requirement to obtain great image optimization.
 
 <!-- GETTING STARTED -->
 

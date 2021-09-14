@@ -4,71 +4,62 @@
 .books {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin-top: -15rem;
-  padding-top: 15rem;
+  margin-top: $section-margin-top;
+  padding-top: $section-padding-top;
+}
+.book-wrapper {
+  margin-bottom: 1rem;
 
-  @include respond(tab-land) {
-    margin-top: 0;
-    padding-top: 5rem;
+  @include respond(desktop) {
+    margin-bottom: 15rem;
+  }
+  @include respond(big-desktop) {
+    margin-bottom: 15rem;
   }
 
-  .book-wrapper {
-    margin-bottom: 15rem;
+  @include respond(phone) {
+    margin-bottom: 0rem;
+  }
+
+  &-text {
+    text-align: left;
 
     @include respond(phone) {
-      margin-bottom: 0rem;
+      margin-bottom: 2.5rem !important;
+    }
+    @include respond(tab-land) {
+      margin-bottom: 4.8rem;
     }
 
-    .row {
-      margin-bottom: 8rem;
+    &-title {
+      font-weight: bold;
+      margin-bottom: 1.8rem;
+      font-size: $mid-font-size;
 
       @include respond(phone) {
-        margin-bottom: 4rem;
+        font-size: 2rem;
       }
     }
 
-    &-text {
-      text-align: left;
+    & p > a {
+      color: $secondary-color;
+    }
+  }
+
+  &-image {
+    margin: 0 auto;
+
+    @include respond(tab-land) {
+      margin: 0;
+    }
+
+    &-thumbnail {
+      display: flex;
+      justify-content: center;
+      border: none;
 
       @include respond(phone) {
-        margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
-      }
-
-      &-title {
-        font-weight: bold;
-        margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
-
-        @include respond(phone) {
-          font-size: 2rem;
-        }
-      }
-
-      & p > a {
-        color: $secondary-color;
-      }
-    }
-
-    &-image {
-      //width: 90%;
-      margin: 0 auto;
-
-      @include respond(tab-land) {
-        //width: 55%;
-        margin: 0;
-      }
-
-      &-thumbnail {
-        display: flex;
-        justify-content: center;
-        border: none;
-
-        @include respond(phone) {
-          margin-bottom: 3.2rem;
-        }
+        margin-bottom: 3.2rem;
       }
     }
   }
